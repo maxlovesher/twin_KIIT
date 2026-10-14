@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.ipynb_checkpoints/
+# Large intermediate feature tables are rebuilt by scripts/build_all.py
+data/processed/features_*.parquet
+# Real open dataset (CC BY 4.0) - fetch with scripts/download_real_data.py
+data/external/
+# Local Claude Code tooling
+.claude/

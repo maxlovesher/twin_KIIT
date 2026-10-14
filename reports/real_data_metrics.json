@@ -1,0 +1,107 @@
+{
+  "cohort": {
+    "recordings": 105,
+    "subjects": 96,
+    "labelled_rows": 247437,
+    "spike_rate": 0.10818107235377086,
+    "hba1c_mean": 8.980198019801978,
+    "tir": 0.7993167302074565,
+    "twin_fit_rmse_30_median": 26.870020573392196,
+    "twin_fit_rmse_60_median": 38.30379426276333
+  },
+  "auroc": {
+    "CGM only": {
+      "auroc": 0.8676023162293929,
+      "auprc": 0.4588486094241244,
+      "event_sensitivity": 0.6023240800516462,
+      "alert_precision": 0.5148918808649531,
+      "median_lead_min": 65.0,
+      "pct_lead_ge_30min": 0.7909967845659164,
+      "alerts_per_day": 2.3300094073377244,
+      "false_alerts_per_day": 1.130306481160569,
+      "n_onsets": 1549
+    },
+    "+ personal routine": {
+      "auroc": 0.8912470430826261,
+      "auprc": 0.5271462593602095,
+      "event_sensitivity": 0.6120077469335055,
+      "alert_precision": 0.5608947804473903,
+      "median_lead_min": 70.0,
+      "pct_lead_ge_30min": 0.8407172995780591,
+      "alerts_per_day": 2.294835866712879,
+      "false_alerts_per_day": 1.0076744070901624,
+      "n_onsets": 1549
+    },
+    "+ meals & insulin doses": {
+      "auroc": 0.8947312687712174,
+      "auprc": 0.535126143198035,
+      "event_sensitivity": 0.617817947062621,
+      "alert_precision": 0.5662949194547707,
+      "median_lead_min": 70.0,
+      "pct_lead_ge_30min": 0.8672936259143156,
+      "alerts_per_day": 2.3014903203446067,
+      "false_alerts_per_day": 0.9981680447591231,
+      "n_onsets": 1549
+    },
+    "+ EHR (clinical record)": {
+      "auroc": 0.8871563172782114,
+      "auprc": 0.5268082336728844,
+      "event_sensitivity": 0.5422853453841188,
+      "alert_precision": 0.5867346938775511,
+      "median_lead_min": 70.0,
+      "pct_lead_ge_30min": 0.8404761904761905,
+      "alerts_per_day": 1.8632470168836965,
+      "false_alerts_per_day": 0.7700153488141808,
+      "n_onsets": 1549
+    },
+    "GlucoTwin (+ digital twin)": {
+      "auroc": 0.8875853863024804,
+      "auprc": 0.5214612694585307,
+      "event_sensitivity": 0.5500322788896062,
+      "alert_precision": 0.5822722820763957,
+      "median_lead_min": 65.0,
+      "pct_lead_ge_30min": 0.8169014084507042,
+      "alerts_per_day": 1.9411991879982184,
+      "false_alerts_per_day": 0.8108927068376496,
+      "n_onsets": 1549
+    }
+  },
+  "diff_ci": {
+    "GlucoTwin (+ digital twin) vs CGM only": {
+      "diff": 0.02032976549086888,
+      "lo": 0.012073938892340244,
+      "hi": 0.030731565258669533
+    },
+    "+ meals & insulin doses vs + personal routine": {
+      "diff": 0.003502889264762742,
+      "lo": 0.0011772016592289493,
+      "hi": 0.006058055323143973
+    },
+    "+ EHR (clinical record) vs + meals & insulin doses": {
+      "diff": -0.00782056278341724,
+      "lo": -0.014070010922716248,
+      "hi": -0.0028362403972730927
+    },
+    "GlucoTwin (+ digital twin) vs + EHR (clinical record)": {
+      "diff": 0.0004937837064460921,
+      "lo": -0.002519657917169399,
+      "hi": 0.0033381802668743174
+    }
+  },
+  "zero_shot": {
+    "auroc": 0.8417642634111624,
+    "auprc": 0.3998325036143933
+  },
+  "forecast": {
+    "30": {
+      "Persistence (no change)": 16.3566237468474,
+      "Calibrated twin (physiology only)": 28.885996862309227,
+      "GlucoTwin hybrid (ML, out-of-fold)": 10.363618559015338
+    },
+    "60": {
+      "Persistence (no change)": 27.783964238946073,
+      "Calibrated twin (physiology only)": 37.82019449732099,
+      "GlucoTwin hybrid (ML, out-of-fold)": 19.98898155717389
+    }
+  }
+}

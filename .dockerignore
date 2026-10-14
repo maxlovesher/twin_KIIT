@@ -1,0 +1,7 @@
+.git
+.venv
+.pytest_cache
+.claude
+**/__pycache__
+**/*.pyc
+data/processed/features_*.parquet
