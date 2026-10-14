@@ -9,3 +9,4 @@ data/processed/features_*.parquet
 data/external/
 # Local Claude Code tooling
 .claude/
+*.stackdump
