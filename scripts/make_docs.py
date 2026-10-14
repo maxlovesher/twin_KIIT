@@ -28,8 +28,8 @@ DOCS = ROOT / "docs"
 FIGS = C.REPORTS_DIR / "figures"
 BLUE, ORANGE, AQUA, VIOLET, GREEN = "#2a78d6", "#eb6834", "#1baf7a", "#4a3aa7", "#008300"
 INK, INK2, MUTED, SURFACE = "#0b0b0b", "#52514e", "#898781", "#fcfcfb"
-TEAM = "<Team Name>"
-COLLEGE = "<College / Incubator>"
+TEAM = "Team Twin"
+COLLEGE = "KIIT, Bhubaneswar"
 
 
 def metrics() -> dict:
@@ -614,7 +614,7 @@ def presentation(m: dict) -> Path:
     s = prs.slides.add_slide(blank)
     fill(s.shapes.add_shape(1, 0, 0, W, prs.slide_height), "#0d366b")
     text(s, 0.8, 2.6, 11.5, 1.2, "Thank you", 48, "#ffffff", True)
-    text(s, 0.8, 3.7, 11.5, 1.2, f"{TEAM} · {COLLEGE} · github.com/<your-org>/<repo>", 18, "#cde2fb")
+    text(s, 0.8, 3.7, 11.5, 1.2, f"{TEAM} · {COLLEGE} · github.com/maxlovesher/twin_KIIT", 18, "#cde2fb")
 
     out = DOCS / "GlucoTwin_presentation.pptx"
     prs.save(out)

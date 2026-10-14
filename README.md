@@ -64,10 +64,10 @@
 
 | | |
 |---|---|
-| **Team name** | `<Team Name>` |
-| **College / incubator** | `<College / Incubator name, City>` |
-| **Team leader** | `<Name>` · `<email>` · `<phone>` |
-| **Members** | `<Name (programme, year)>` · `<Name>` · `<Name>` |
+| **Team name** | Twin |
+| **College** | KIIT (Kalinga Institute of Industrial Technology), Bhubaneswar |
+| **Team leader** | Chinmaya Biswal (contact details shared on the Unstop submission) |
+| **Members** | Chinmaya Biswal · Manish Sarkar · Mishti Ghosh |
 
 ## 2. Project title
 

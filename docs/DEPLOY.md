@@ -23,7 +23,7 @@ and rebuildable; the real dataset is fetched with `scripts/download_real_data.py
 1. Push the repository to GitHub and make it **public**.
 2. Go to <https://share.streamlit.io>, sign in with GitHub, and choose **Create app → Deploy a public app from
    GitHub**.
-3. Repository: `<your-org>/<your-repo>` · Branch: `main` · Main file path: **`dashboard/app.py`**.
+3. Repository: `maxlovesher/twin_KIIT` · Branch: `main` · Main file path: **`dashboard/app.py`**.
 4. Under *Advanced settings*, choose **Python 3.11**.
 5. Click **Deploy**. The first build installs `requirements.txt` and takes a few minutes. The first page load
    takes ~20 s while the patient twins load.
