@@ -12,7 +12,7 @@
 > - explains **why**;
 > - lets the doctor and patient test **"what if"** on the patient's own simulated body.
 
-**▶ Live demo:** `<add your Streamlit Cloud link (docs/DEPLOY.md)>` · **🎥 Video:** `<add your YouTube link>`
+**▶ Live demo:** **<https://glucotwin-kiit.streamlit.app>** (free hosting; if it says the app is asleep, click "wake up" and wait ~1 min) · **🎥 Video:** `<add your YouTube link>`
 
 ![GlucoTwin demo](docs/demo.gif)
 

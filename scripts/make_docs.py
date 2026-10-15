@@ -615,6 +615,7 @@ def presentation(m: dict) -> Path:
     fill(s.shapes.add_shape(1, 0, 0, W, prs.slide_height), "#0d366b")
     text(s, 0.8, 2.6, 11.5, 1.2, "Thank you", 48, "#ffffff", True)
     text(s, 0.8, 3.7, 11.5, 1.2, f"{TEAM} · {COLLEGE} · github.com/maxlovesher/twin_KIIT", 18, "#cde2fb")
+    text(s, 0.8, 4.4, 11.5, 1.0, "Live demo: glucotwin-kiit.streamlit.app", 18, "#ffffff", True)
 
     out = DOCS / "GlucoTwin_presentation.pptx"
     prs.save(out)
