@@ -38,4 +38,4 @@ fi
 echo "  [3/3] Starting the dashboard at http://localhost:8501  (Ctrl+C to stop)"
 echo "        The first page load takes ~30 s while the patient twins compile."
 echo
-exec "$VPY" -m streamlit run dashboard/app.py --server.port 8501 --browser.gatherUsageStats false
+exec "$VPY" -m streamlit run dashboard/app.py --server.port 8501 --server.headless false --browser.gatherUsageStats false

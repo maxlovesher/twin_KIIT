@@ -59,5 +59,5 @@ echo   [3/3] Starting the dashboard at http://localhost:8501
 echo         The first page load takes ~30 s while the patient twins compile.
 echo         Close this window (or press Ctrl+C) to stop.
 echo.
-"%VPY%" -m streamlit run dashboard\app.py --server.port 8501 --browser.gatherUsageStats false
+"%VPY%" -m streamlit run dashboard\app.py --server.port 8501 --server.headless false --browser.gatherUsageStats false
 pause
