@@ -1,0 +1,5 @@
+# Windows batch files must keep CRLF, shell scripts must keep LF, whatever the committer's autocrlf setting.
+*.bat text eol=crlf
+*.sh  text eol=lf
+*.joblib binary
+*.parquet binary

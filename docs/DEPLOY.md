@@ -49,6 +49,9 @@ and rebuildable; the real dataset is fetched with `scripts/download_real_data.py
 
 ## Running locally (for reviewers)
 
+The easiest way is to double-click `start.bat` on Windows, or run `bash start.sh` on macOS or Linux. The script
+creates `.venv`, installs the pinned requirements and opens the dashboard. To do the same by hand:
+
 ```bash
 pip install -r requirements.txt
 streamlit run dashboard/app.py                 # http://localhost:8501

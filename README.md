@@ -280,6 +280,20 @@ times, calibration, forecast error, group importance, twin parameter recovery, a
 
 ## Quick start
 
+### One-click run (no setup)
+
+The trained models and demo data are already in the repo, so the dashboard runs without rebuilding anything.
+
+1. Install **Python 3.11–3.13** from <https://www.python.org/downloads/>. On Windows, tick **"Add python.exe to
+   PATH"** on the first installer screen.
+2. Clone the repo, or use **Code → Download ZIP** and extract it.
+3. **Windows:** double-click **`start.bat`**. **macOS / Linux:** run `bash start.sh`.
+
+The first run creates a private `.venv` and installs the packages, which takes a few minutes. The dashboard then
+opens at <http://localhost:8501>. Later runs start in seconds.
+
+### Full pipeline (rebuild everything from scratch)
+
 ```bash
 pip install -r requirements.txt
 python scripts/build_all.py            # simulate → calibrate twins → features → train → evaluate → figures (~6–8 min)

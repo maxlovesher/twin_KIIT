@@ -1,9 +1,13 @@
-numpy>=1.26
+# The saved models in models/ are pickles: scikit-learn must match the version they were trained with,
+# and numpy must be 2.x. Retrain with `python scripts/build_all.py --from train` if you change either.
+numpy>=2.0,<3
 pandas>=2.1
 scipy>=1.11
-scikit-learn>=1.4
+scikit-learn==1.7.2
 numba>=0.59
 pyarrow>=14
+openpyxl>=3.1
+xlrd>=2.0.1
 joblib>=1.3
 matplotlib>=3.8
 plotly>=5.20
